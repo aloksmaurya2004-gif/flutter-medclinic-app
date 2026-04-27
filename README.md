@@ -1,8 +1,7 @@
 # 🏥 MedClinic Flutter App
 
 A modern **Healthcare Mobile Application UI** built using **Flutter**.
-This app allows users to browse doctors, view details, and book appointments بسهولة.
-
+This app allows users to browse doctors, view details, and book appointments 
 ---
 
 ## 🚀 Features
