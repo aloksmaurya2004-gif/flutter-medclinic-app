@@ -6,7 +6,7 @@ This app allows users to browse doctors, view details, and book appointments
 
 ## 🚀 Features
 
-* 🔐 Authentication (Login / Signup / Forgot Password)
+
 * 🏠 Home Dashboard
 * 👨‍⚕️ Doctors Listing
 * 🔍 Search & Filter Doctors
