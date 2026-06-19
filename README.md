@@ -25,7 +25,7 @@ This app allows users to browse doctors, view details, and book appointments
 3. Doctor Details
 4. Appointment Booking
 5. Profile Screen
-6. Login / Signup / Forgot Password
+
 
 ---
 

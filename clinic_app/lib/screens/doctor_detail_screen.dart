@@ -22,7 +22,7 @@ class DoctorDetailScreen extends StatelessWidget {
               icon: Container(
                 padding: const EdgeInsets.all(6),
                 decoration: BoxDecoration(
-                  color: AppTheme.white.withOpacity(0.2),
+                  color: AppTheme.white.withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
@@ -38,7 +38,7 @@ class DoctorDetailScreen extends StatelessWidget {
                 icon: Container(
                   padding: const EdgeInsets.all(6),
                   decoration: BoxDecoration(
-                    color: AppTheme.white.withOpacity(0.2),
+                    color: AppTheme.white.withValues(alpha: 0.2),
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(
@@ -75,7 +75,7 @@ class DoctorDetailScreen extends StatelessWidget {
                         end: Alignment.bottomCenter,
                         colors: [
                           Colors.transparent,
-                          AppTheme.dark.withOpacity(0.7),
+                          AppTheme.dark.withValues(alpha: 0.7),
                         ],
                       ),
                     ),
@@ -100,7 +100,7 @@ class DoctorDetailScreen extends StatelessWidget {
                           doctor.specialty,
                           style: GoogleFonts.dmSans(
                             fontSize: 14,
-                            color: AppTheme.white.withOpacity(0.85),
+                            color: AppTheme.white.withValues(alpha: 0.85),
                           ),
                         ),
                       ],
@@ -188,7 +188,8 @@ class DoctorDetailScreen extends StatelessWidget {
                         ),
                       ),
                     ],
-                  )
+                  ),
+                  ),
                   const SizedBox(height: 24),
                   // About
                   Text(
