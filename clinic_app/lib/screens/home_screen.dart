@@ -46,10 +46,9 @@ class _HeroSliver extends StatelessWidget {
       backgroundColor: AppTheme.primary,
       leading: Padding(
         padding: const EdgeInsets.all(8),
-        child: Image.network(
-          'https://via.placeholder.com/40x40',
-          errorBuilder: (_, _, _) =>
-              const Icon(Icons.local_hospital, color: AppTheme.white),
+        child: Image.asset(
+          'assets/images/app_logo.png',
+          semanticLabel: 'MedClinic logo',
         ),
       ),
       title: Text(
