@@ -16,6 +16,7 @@ void main() {
       statusBarIconBrightness: Brightness.light,
     ),
   );
+
   runApp(const ClinicApp());
 }
 
@@ -54,10 +55,7 @@ class _MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _screens,
-      ),
+      body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: AppTheme.white,
@@ -75,11 +73,35 @@ class _MainNavigationState extends State<MainNavigation> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _NavItem(icon: Icons.home_rounded, label: 'Home', index: 0, currentIndex: _currentIndex, onTap: _onTap),
-                _NavItem(icon: Icons.people_outlined, label: 'Doctors', index: 1, currentIndex: _currentIndex, onTap: _onTap),
+                _NavItem(
+                  icon: Icons.home_rounded,
+                  label: 'Home',
+                  index: 0,
+                  currentIndex: _currentIndex,
+                  onTap: _onTap,
+                ),
+                _NavItem(
+                  icon: Icons.people_outlined,
+                  label: 'Doctors',
+                  index: 1,
+                  currentIndex: _currentIndex,
+                  onTap: _onTap,
+                ),
                 _NavBookButton(onTap: () => _onTap(2)),
-                _NavItem(icon: Icons.grid_view_rounded, label: 'Depts', index: 3, currentIndex: _currentIndex, onTap: _onTap),
-                _NavItem(icon: Icons.person_outline, label: 'Profile', index: 4, currentIndex: _currentIndex, onTap: _onTap),
+                _NavItem(
+                  icon: Icons.grid_view_rounded,
+                  label: 'Depts',
+                  index: 3,
+                  currentIndex: _currentIndex,
+                  onTap: _onTap,
+                ),
+                _NavItem(
+                  icon: Icons.person_outline,
+                  label: 'Profile',
+                  index: 4,
+                  currentIndex: _currentIndex,
+                  onTap: _onTap,
+                ),
               ],
             ),
           ),
